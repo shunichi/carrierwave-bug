@@ -31,7 +31,6 @@ ActiveSupport.on_load :active_record do
 end
 
 class AvatarUploader < CarrierWave::Uploader::Base
-  permissions 0777
 end
 
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
